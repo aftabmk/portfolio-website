@@ -1,0 +1,154 @@
+.contact-form
+{
+    width: 100%;
+    margin-top: 10px;
+    ul
+    {
+        padding: 0;
+        margin: 0;
+    }
+    li
+    {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 2s 3s ;
+        animation-fill-mode: forwards;
+        clear: both;
+    }
+    li.half
+    {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+        &:first-child
+        {
+            margin-left: 0;
+        }
+    }
+    input[type='text'],
+    input[type='email']{
+        width: 100%;
+        border: 0;
+        background: #115173;
+        height: 30px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    textarea
+    {
+        width: 100%;
+        border: 0;
+        background: #115173;
+        height: 30px;
+        font-size: 16x;
+        color: #fff;
+        padding: 20px;
+        min-height: 75px;
+        box-sizing: border-box;
+    }
+    .flat-button
+    {
+        color: #ffd700;
+        background:0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid #ffd700;
+        float: right;
+        border-radius: 4px;
+
+    }
+}
+.info-map
+{
+    position: absolute;
+    background-color: #000;
+    top: 20px;
+    right: 40%;
+    z-index: 2;
+    width: 250px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 1;
+
+    span
+    {
+        font-size: 16px;
+        display: block;
+        padding-top: 20px;
+        color: #ffd700;
+    }
+
+}
+.map-wrap
+{
+    background:rgba(8,253,216,0.1);
+    float: right;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+}
+.leaflet-container
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s 2s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+@media (max-width:768px)
+{
+    .contact-form
+    {
+        width: 100%;
+        margin-top: 10px;
+        li.half
+        {
+            width: 100%;
+            margin-left: 0%;
+            &:first-child
+            {
+                margin-left: 0;
+            }
+        }
+        .flat-button
+        {
+            color: #ffd700;
+            background:0 0;
+            font: 11px;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 8px 10px;
+    
+        }
+    }
+    .info-map
+    {
+        display: none;
+    }
+    .map-wrap
+    {
+        display: none;
+    }
+    .leaflet-container
+    {
+        display: none;
+    } 
+}

@@ -1,0 +1,71 @@
+.logo-container
+{
+    z-index: 0;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right:15%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    opacity: 1;
+    h2
+    {
+        display: block;
+        font-size: 450px;
+        width: 80%;
+        transform: rotateX(30deg);
+        color: rgb(22, 70, 117);
+        text-shadow:1px 1px 1px #ffd700,
+                    1px 2px 1px #ffd700,
+                    1px 3px 1px #ffd700,
+                    1px 4px 1px #ffd700,
+                    1px 5px 1px #ffd700,
+                    1px 6px 1px #ffd700,
+                    1px 7px 1px #ffd700,
+                    1px 8px 1px #ffd700,
+                    1px 9px 1px #ffd700,
+                    1px 10px 1px #ffd700,
+                    1px 11px 1px #ffd700,
+                    1px 12px 1px #ffd700,
+                    1px 13px 1px #ffd700,
+                    1px 14px 1px #ffd700,
+                    1px 15px 1px #ffd700,
+                    1px 16px 1px #ffd700,
+                    1px 17px 1px #ffd700,
+                    1px 18px 1px #ffd700,
+                    1px 20px 6px rgba(255, 255, 255, 0.4),
+                    1px 22px 10px rgba(255, 255, 255, 0.2),
+                    1px 25px 35px rgba(255, 255, 255, 0.2),
+                    1px 30px 60px rgba(255, 255, 255, 0.4),
+    }
+    animation: move 10s infinite;
+    animation-timing-function: ease-in-out;
+    @keyframes move {
+        0%  {top: -40%;}
+        50% {top: 0%;}
+        100%{top: -40%;}
+    }
+}
+@media (max-width:768px) 
+{
+    .logo-container
+    {
+        width: 200px;
+        height: 300px;
+        right: 5%;
+        bottom: 50%;
+        h2
+        {
+            font-size: 50vw;
+            width: 50vw;
+            margin-bottom: 0px;
+        }
+        @keyframes move {
+            0%  {top: -20%;}
+            50% {top: 0%;}
+            100%{top: -20%;}
+        }
+    }     
+}
