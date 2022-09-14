@@ -10,12 +10,6 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      {/* <Link
-        className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
-        <a href="/">aftab</a>
-      </Link> */}
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
           exact="true"
