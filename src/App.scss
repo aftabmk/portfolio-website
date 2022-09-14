@@ -20,6 +20,14 @@ textarea
 {
   font-family: 'Helvetica Neue';
 }
+
+.App
+{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  min-width: 300px;
+}
 .loader-active
 {
   display: block;

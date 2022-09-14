@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import './App.scss'
-import Layout from './components/Layout'
 import About from './components/About'
+import Layout from './components/Layout'
 import Home from './components/Home'
+import Notfound from "./components/404";
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
-import Notfound from "./components/404";
 
 
 function App() {

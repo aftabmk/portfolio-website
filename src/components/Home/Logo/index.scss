@@ -2,19 +2,18 @@
 {
     z-index: 0;
     width: 400px;
-    height: 600px;
+    height: 300px;
     position: absolute;
     top: 0;
-    right:15%;
+    right:0;
     bottom: 0;
-    left: auto;
-    margin: auto;
     opacity: 1;
     h2
     {
-        display: block;
-        font-size: 450px;
+        display: flex;
+        font-size: 350px;
         width: 80%;
+        margin-right: 30px;
         transform: rotateX(30deg);
         color: rgb(22, 70, 117);
         text-shadow:1px 1px 1px #ffd700,
@@ -43,9 +42,9 @@
     animation: move 10s infinite;
     animation-timing-function: ease-in-out;
     @keyframes move {
-        0%  {top: -40%;}
-        50% {top: 0%;}
-        100%{top: -40%;}
+        0%  {top: -20%;}
+        50% {top: 5%;}
+        100%{top: -20%;}
     }
 }
 @media (max-width:768px) 
@@ -63,9 +62,9 @@
             margin-bottom: 0px;
         }
         @keyframes move {
-            0%  {top: -20%;}
-            50% {top: 0%;}
-            100%{top: -20%;}
+            0%  {top: -10%;}
+            50% {top: 10%;}
+            100%{top: -10%;}
         }
     }     
 }
