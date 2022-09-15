@@ -5,7 +5,7 @@ html{
   
   body {
     margin: 0;
-    font: 300 11px/1.4 'Helvetica','sans-serif';
+    font: 500 11px/1.4 'Helvetica','sans-serif';
     color: #444;
     background-color: rgb(5, 11, 37);
     display: flex;
@@ -18,3 +18,4 @@ div::-webkit-scrollbar
 {
   display: none;
 }
+

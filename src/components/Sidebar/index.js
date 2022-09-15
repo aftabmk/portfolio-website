@@ -2,7 +2,7 @@ import './index.scss'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub,faTwitter} from '@fortawesome/free-brands-svg-icons'
-import {faHome,faUser,faEnvelope,faBriefcase,faBars,faClose,} from '@fortawesome/free-solid-svg-icons'
+import {faHome,faUser,faEnvelope,faBriefcase,faBars,faClose, faUserTie,} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -18,6 +18,7 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
+        
         <NavLink
           activeclassname="active"
           className="about-link"
@@ -25,6 +26,7 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+        
         <NavLink
           activeclassname="active"
           className="portfolio-link"
@@ -33,6 +35,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
         </NavLink>
+        
         <NavLink
           activeclassname="active"
           className="contact-link"
@@ -41,6 +44,16 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        
+        <NavLink
+          activeclassname="active"
+          className="resume-link"
+          to="/resume"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faUserTie} color="#4d4d4e" />
+        </NavLink>
+        
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}

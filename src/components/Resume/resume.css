@@ -1,0 +1,204 @@
+.resume {
+    position: relative;
+    margin: auto;
+    flex-flow: row wrap;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+    font-style: italic;
+
+    background-color: #E3E3E3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23E3E3E3'/%3E%3Cstop offset='1' stop-color='%2338FFC5'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFCF2' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFCF2' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23FFFCF2' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFCF2' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.7'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.top1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.imgBx {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.img1 {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileText {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.profileText .h3 {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+.contentBox {
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+
+.leftSide {
+    padding: 20px 40px;
+}
+
+.h3 {
+    border-left: 4px solid #009688;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.ul {
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.ul li {
+    list-style: none;
+    display: flex;
+    margin: 25px 0;
+
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1em;
+    margin-right: 10px;
+    color: #009688;
+}
+
+.year {
+    color: #009688;
+}
+
+.university {
+    color: #666;
+}
+
+.eduction {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.language {
+    padding: 0;
+    list-style: none;
+}
+
+.language ul li {
+    margin: 25px 0;
+    flex-direction: column;
+}
+
+.language li span {
+    list-style: none;
+    flex-direction: column;
+}
+
+.rightSide {
+    padding: 20px 40px;
+}
+
+.texts {
+    padding-left: 10px;
+}
+
+.fa-icon {
+    font-size: 75px;
+}
+
+.icons {
+    width: 75px;
+}
+
+.span {
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spanlast {
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.a {
+    font-size: 50px;
+    animation: color 15s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes color {
+    0% {
+        color: rgba(45, 169, 145, 0.9)
+    }
+    25% {
+        color: rgba(45, 169, 145, 0.5)
+    }
+    50% {
+        color: rgba(45, 72, 82, 0.9)
+    }
+    75% {
+        color: rgba(45, 169, 145, 0.5)
+    }
+    100% {
+        color: rgba(45, 169, 145, 0.9)
+    }
+}
+
+@media (max-width : 768px) {
+    .top1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .img1 
+    {
+        display: none;
+    }
+    .contentBox {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}

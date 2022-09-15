@@ -61,7 +61,7 @@
       &:after {
         content: '';
         font-size: 9px;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         position: absolute;
         bottom: 0;
         display: block;
@@ -94,6 +94,11 @@
     a.portfolio-link {
       &:after {
         content: 'PORTFOLIO';
+      }
+    }
+    a.resume-link {
+      &:after {
+        content: 'RESUME';
       }
     }
 
