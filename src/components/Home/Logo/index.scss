@@ -15,7 +15,7 @@
         width: 80%;
         margin-right: 30px;
         transform: rotateX(30deg);
-        color: rgb(22, 70, 117);
+        color: #16115c;
         text-shadow:1px 1px 1px #ffd700,
                     1px 2px 1px #ffd700,
                     1px 3px 1px #ffd700,
@@ -34,10 +34,10 @@
                     1px 16px 1px #ffd700,
                     1px 17px 1px #ffd700,
                     1px 18px 1px #ffd700,
-                    1px 20px 6px rgba(255, 255, 255, 0.4),
-                    1px 22px 10px rgba(255, 255, 255, 0.2),
-                    1px 25px 35px rgba(255, 255, 255, 0.2),
-                    1px 30px 60px rgba(255, 255, 255, 0.4),
+                    1px 20px 6px rgba(217, 255, 0, 0.4),
+                    1px 22px 10px rgba(217, 255, 0, 0.4),
+                    1px 25px 35px rgba(217, 255, 0, 0.4),
+                    1px 30px 60px rgba(217, 255, 0, 0.4),
     }
     animation: move 10s infinite;
     animation-timing-function: ease-in-out;
