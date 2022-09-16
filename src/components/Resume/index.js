@@ -132,7 +132,7 @@ const Resume = () => {
                     <div className="about">
                         <h3 className='h3'>Profile</h3>
                         <p>
-                            I am a mechanical engineer who like to persue career in MERN stack . I self taught coding with the help of some of the youtube channels like Fireship, Laith Academy, Online tutorial ,The net Ninja, freecodecamp and js mastery.
+                            I am a mechanical engineer who like to pursue career in MERN stack . I self taught coding with the help of some of the youtube channels like Fireship, Laith Academy, Online tutorial ,The net Ninja, freecodecamp and js mastery.
                         </p>
                     </div>
                     <div className="project">
