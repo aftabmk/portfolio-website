@@ -132,11 +132,7 @@ const Resume = () => {
                     <div className="about">
                         <h3 className='h3'>Profile</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab consequuntur suscipit soluta maxime amet dignissimos incidunt iste! Tempora praesentium consequuntur sapiente molestiae maiores distinctio iusto illo similique, perspiciatis libero.
-                            Rem voluptates sed id minus, repudiandae deleniti. Laudantium dicta aliquam quae, facere autem nesciunt fuga voluptatem minima iste praesentium incidunt atque voluptate! Ea mollitia dolorem laborum atque natus, dolor amet?
-                            Beatae nostrum explicabo ad aspernatur deleniti voluptatibus vitae a fugit voluptate tempore? Ut, enim? A impedit explicabo quam cumque fuga illo praesentium obcaecati quod? Libero nostrum placeat magni voluptatum nobis?
-                            Dolorum commodi tempore omnis voluptatem quasi vitae inventore ut officia suscipit eius? At ipsa exercitationem placeat quas, totam optio eius enim veniam dolor. Explicabo modi nobis obcaecati voluptatem consequatur porro?
-                            Sint id libero sapiente consequatur eius illo, quisquam quos unde provident. Hic mollitia, explicabo nesciunt dicta aperiam quam ducimus doloribus omnis esse perferendis aliquid nihil accusamus consectetur sequi adipisci sapiente.
+                            I am a mechanical engineer who like to persue career in MERN stack . I self taught coding with the help of some of the youtube channels like Fireship, Laith Academy, Online tutorial ,The net Ninja, freecodecamp and js mastery.
                         </p>
                     </div>
                     <div className="project">
