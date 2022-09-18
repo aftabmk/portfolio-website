@@ -44,7 +44,7 @@ const Resume = () => {
                             <span className="icon">
                                 <FontAwesomeIcon icon={faGlobe} />
                             </span>
-                            <span className="text">https://aftabmk.netlify.app</span>
+                            <span className="text">https://aftab.netlify.app</span>
                         </li>
                         <li>
                             <span className="icon">

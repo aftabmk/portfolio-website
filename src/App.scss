@@ -26,6 +26,7 @@ textarea
   display: flex;
   width: 100vw;
   min-width: 300px;
+  overflow: hidden;
 }
 .loader-active
 {
@@ -40,4 +41,5 @@ textarea
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+  z-index: 10;
 }
