@@ -1,70 +1,72 @@
-.logo-container
-{
-    z-index: 0;
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    right:0;
-    bottom: 0;
-    opacity: 1;
-    h2
-    {
-        display: flex;
-        font-size: 350px;
-        width: 80%;
-        margin-right: 30px;
-        transform: rotateX(30deg);
-        color: #16115c;
-        text-shadow:1px 1px 1px #ffd700,
-                    1px 2px 1px #ffd700,
-                    1px 3px 1px #ffd700,
-                    1px 4px 1px #ffd700,
-                    1px 5px 1px #ffd700,
-                    1px 6px 1px #ffd700,
-                    1px 7px 1px #ffd700,
-                    1px 8px 1px #ffd700,
-                    1px 9px 1px #ffd700,
-                    1px 10px 1px #ffd700,
-                    1px 11px 1px #ffd700,
-                    1px 12px 1px #ffd700,
-                    1px 13px 1px #ffd700,
-                    1px 14px 1px #ffd700,
-                    1px 15px 1px #ffd700,
-                    1px 16px 1px #ffd700,
-                    1px 17px 1px #ffd700,
-                    1px 18px 1px #ffd700,
-                    1px 20px 6px rgba(217, 255, 0, 0.4),
-                    1px 22px 10px rgba(217, 255, 0, 0.4),
-                    1px 25px 35px rgba(217, 255, 0, 0.4),
-                    1px 30px 60px rgba(217, 255, 0, 0.4),
-    }
-    animation: move 10s infinite;
-    animation-timing-function: ease-in-out;
-    @keyframes move {
-        0%  {top: -20%;}
-        50% {top: 5%;}
-        100%{top: -20%;}
-    }
-}
-@media (max-width:768px) 
-{
-    .logo-container
-    {
-        width: 200px;
-        height: 300px;
-        right: 5%;
-        bottom: 50%;
-        h2
-        {
-            font-size: 50vw;
-            width: 50vw;
-            margin-bottom: 0px;
-        }
-        @keyframes move {
-            0%  {top: -10%;}
-            50% {top: 10%;}
-            100%{top: -10%;}
-        }
-    }     
-}
+// .logo-container
+// {
+//     display: none;
+//     z-index: 0;
+//     width: 400px;
+//     height: 300px;
+//     position: absolute;
+//     top: 0;
+//     right:0;
+//     bottom: 0;
+//     opacity: 1;
+//     h2
+//     {
+//         display: flex;
+//         font-size: 350px;
+//         width: 80%;
+//         margin-right: 30px;
+//         transform: rotateX(30deg);
+//         color: #16115c;
+//         text-shadow:1px 1px 1px #ffd700,
+//                     1px 2px 1px #ffd700,
+//                     1px 3px 1px #ffd700,
+//                     1px 4px 1px #ffd700,
+//                     1px 5px 1px #ffd700,
+//                     1px 6px 1px #ffd700,
+//                     1px 7px 1px #ffd700,
+//                     1px 8px 1px #ffd700,
+//                     1px 9px 1px #ffd700,
+//                     1px 10px 1px #ffd700,
+//                     1px 11px 1px #ffd700,
+//                     1px 12px 1px #ffd700,
+//                     1px 13px 1px #ffd700,
+//                     1px 14px 1px #ffd700,
+//                     1px 15px 1px #ffd700,
+//                     1px 16px 1px #ffd700,
+//                     1px 17px 1px #ffd700,
+//                     1px 18px 1px #ffd700,
+//                     1px 20px 6px rgba(217, 255, 0, 0.4),
+//                     1px 22px 10px rgba(217, 255, 0, 0.4),
+//                     1px 25px 35px rgba(217, 255, 0, 0.4),
+//                     1px 30px 60px rgba(217, 255, 0, 0.4),
+//     }
+//     animation: move 10s infinite;
+//     animation-timing-function: ease-in-out;
+//     @keyframes move {
+//         0%  {top: -20%;}
+//         50% {top: 5%;}
+//         100%{top: -20%;}
+//     }
+// }
+// @media (max-width:768px) 
+// {
+//     .logo-container
+//     {   
+//         display: initial;
+//         width: 200px;
+//         height: 300px;
+//         right: 5%;
+//         bottom: 50%;
+//         h2
+//         {
+//             font-size: 50vw;
+//             width: 50vw;
+//             margin-bottom: 0px;
+//         }
+//         @keyframes move {
+//             0%  {top: -10%;}
+//             50% {top: 10%;}
+//             100%{top: -10%;}
+//         }
+//     }     
+// }

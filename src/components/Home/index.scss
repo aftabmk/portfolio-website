@@ -7,6 +7,7 @@
         transform: translateY(-50%);
         width: 60%;
         max-height: 90%;
+        z-index: 10;
     }
     h1
     {
@@ -89,9 +90,12 @@
     {
         .text-zone
         {
-            top: 70%;
+            top: 50%;
             width: 80%;
-            max-height: 90%;
+            max-height: 100%;
+            left: 10%;
+            // max-height: 90%;
+            // left: 0%;
         }
         h1
         {

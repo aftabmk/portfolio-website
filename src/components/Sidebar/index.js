@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub,faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faHome,faUser,faEnvelope,faBriefcase,faBars,faClose, faUserTie,} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
