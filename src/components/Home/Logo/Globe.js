@@ -21,8 +21,6 @@ import './index.scss';
                 ref={globeRf}
                 globeImageUrl={moon}
                 bumpImageUrl={moons}
-                left='40%'
-                width='200px'
                 backgroundColor="rgba(0,0,0,0)"
             />
         </div>

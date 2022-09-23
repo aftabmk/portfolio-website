@@ -1,9 +1,22 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Globes from '../Home/Logo/Globe';
 import Sidebar from '../Sidebar';
 import './index.scss';
 
 const Layout = () => {
+
+    const [ desktop , setDesktop ] = useState(window.innerWidth>768)
+    const media = () =>
+    {
+        setDesktop(window.innerWidth>768)
+    }
+    useEffect(()=>{
+        window.addEventListener('resize',media)
+        return () => window.removeEventListener('resize',media)
+    })
+
     return (
         <div className='App'>
             <div className='div1'>
@@ -18,9 +31,7 @@ const Layout = () => {
                         &lt;body&gt;
                     </span>
                     <Outlet />
-                    <div className="globe">
-                        <Globes />
-                    </div>
+                    { desktop && <div className="globe"><Globes /></div>}
                     <span className="tags bottom-tags">
                         &lt;/body&gt;
                         <br />
