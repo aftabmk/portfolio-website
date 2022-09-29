@@ -5,7 +5,7 @@ import './index.scss'
 import db from '../Backend/config'
 import { onSnapshot, collection } from 'firebase/firestore'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleChevronLeft, faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faCircleChevronLeft, faCircleChevronRight, faS } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -58,7 +58,7 @@ const Portfolio = () => {
                 </div>
                 <div className="slider">
                     <FontAwesomeIcon icon={faCircleChevronLeft} className='left-arrow' onClick={nextSlide} />
-                    <FontAwesomeIcon icon={faCircleChevronRight} className='right-arrow' onClick={nextSlide} />
+                    <FontAwesomeIcon icon={faChevronRight} className='right-arrow' onClick={nextSlide} />
                     {
                         port.map((port, idx) => {
                             return (
