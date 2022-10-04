@@ -1,20 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
-import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss'
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 
 
 const Contact = () => {
+    const ref = useRef()
     const [desktop, setDesktop] = useState(window.innerWidth > 768)
+    const [letterClass, setLetterClass] = useState('text-animate')
+    
+    const position = [10.978021, 76.227408];
     const media = () => setDesktop(window.innerWidth > 768)
+    const sendEmail = (e) => { e.preventDefault(); emailjs.sendForm('service_brrz7ms', "template_x8gfwjm", ref.current, "o8QHhmjdHiUIya-To").then((result) => { console.log(result.text); alert('Message sent successfully'); window.location.reload(true) }, () => { alert('Failed to send the message') }); }
+    
     useEffect(() => { window.addEventListener('resize', media); return () => window.removeEventListener('resize', media) })
     useEffect(() => { setTimeout(() => { return setLetterClass('text-animate-hover') }, 3000) }, [])
-    const sendEmail = (e) => { e.preventDefault(); emailjs.sendForm('service_brrz7ms', "template_x8gfwjm", ref.current, "o8QHhmjdHiUIya-To").then((result) => { console.log(result.text); alert('Message sent successfully'); window.location.reload(true) }, () => { alert('Failed to send the message') }); }
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const ref = useRef()
-    const position = [10.978021, 76.227408];
+
 
 
     return (
@@ -77,7 +79,6 @@ const Contact = () => {
                     </div>
                 </>)}
             </div>
-            <Loader type='pacman' />
         </div>
     );
 }

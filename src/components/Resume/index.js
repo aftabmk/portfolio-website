@@ -1,28 +1,35 @@
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faReact } from '@fortawesome/free-brands-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faCalendar, faEnvelope, faGlobe, faGraduationCap, faHome, faLocationDot, faPhone, faUniversity } from '@fortawesome/free-solid-svg-icons'
 import { onSnapshot, collection } from 'firebase/firestore'
 import db from '../Backend/config'
+import Loading from '../Loading/Loading';
 import './resume.css'
 
 const Resume = () => {
     const [projects, setprojects] = useState([])
     const [bio, setBio] = useState([])
     const [pics, setPics] = useState([])
-    useEffect(() => 
-    {   onSnapshot(collection(db, 'resume'), (data) => { setprojects(data.docs.map(doc => doc.data())) })
+
+    useEffect(() => {
+        onSnapshot(collection(db, 'resume'), (data) => { setprojects(data.docs.map(doc => doc.data())) })
         onSnapshot(collection(db, 'bio'), (data) => { setBio(data.docs.map(doc => doc.data())) })
         onSnapshot(collection(db, 'image'), (data) => { setPics(data.docs.map(doc => doc.data())) })
     }, [])
 
+    if (!projects || !bio || !pics) return <Loading />
 
     return (
 
         <div className="resume">
             <div className="top1">
                 <div className="imgBx">
-                    {bio.map((image)=><img className='img1' src={image.img} alt="img" />)}
+                    {bio.map((biodata) => (
+                        <a href={biodata.pdf} target='_blank'>
+                            <img className='img1' src={biodata.img} alt="img" />
+                        </a>
+                    ))}
                 </div>
                 <div className="profileText">
                     <h3 className='h3'>Aftab Mohamed<br />Kizhissery</h3>
